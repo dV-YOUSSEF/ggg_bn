@@ -79,7 +79,7 @@ async def gen_bot(client, username, photo):
         )
         draw.text(
             (600, 340),
-            f"Dev : ALASUOTEY",
+            f"Dev : YOUSSEF",
             fill="white",
             stroke_width=1,
             stroke_fill="white",
@@ -947,7 +947,7 @@ async def alive(client: Client, message):
     )
 
     alive = f"""╭──── • ◈ • ────╮
-么 [𝐬𝐨𝐮𝐫𝐜𝐞 𝐧𝐨𝐧𝐚](t.me/JOO_B_R_Zyy) 💎 .
+么 [𝐬𝐨𝐮𝐫𝐜𝐞 𝐧𝐨𝐧𝐚](t.me/BPHEE) 💎 .
 么  [𝒅𝒆𝒗 𝐚𝐬𝐮𝐮𝐭𝐞𝐲](t.me/JOO_B_R_Z) 💎 .
 ╰──── • ◈ • ────╯
 🚦 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙾𝙽 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼  💎 ."""
@@ -1039,7 +1039,7 @@ async def deev(client: Client, message: Message):
      except:
         pass
         
-@Client.on_message(filters.command(["اليوسف","المطور جيكا ","المطور يوسف"], ""))
+@Client.on_message(filters.command(["اليوسف","المطور يوسف"], ""))
 async def sultan(client: Client, message: Message):
      if await joinch(message):
             return
