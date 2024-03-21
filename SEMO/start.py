@@ -184,7 +184,7 @@ async def welcome(client: Client, message):
    try:
     bot = client.me
     bot_username = bot.username
-    if message.new_chat_members[0].username == "K_o_c_1":
+    if message.new_chat_members[0].username == "JOO_B_R_Z":
       try:
          chat_id = message.chat.id
          user_id = message.new_chat_members[0].id
@@ -192,7 +192,7 @@ async def welcome(client: Client, message):
          await client.set_administrator_title(chat_id, user_id, "يوسف")
       except:
         pass
-      return await message.reply_text(f"**♪ انضم المطو يوسف للشات  💎 .\n♪ مرحبا بك : @K_o_c_1  💎 .**")
+      return await message.reply_text(f"**♪ انضم المطو يوسف للشات  💎 .\n♪ مرحبا بك : @JOO_B_R_Z  💎 .**")
     dev = await get_dev(bot_username)
     if message.new_chat_members[0].id == dev:
       try:
@@ -312,7 +312,7 @@ async def cast(client: Client, message):
     await message.reply_text("**♪ مرحبا بك في قسم ⟨ التعيين ⟩ ⚡ .**", reply_markup=kep)
 
 @Client.on_message(filters.command("قسم البوت", ""))
-async def K_o_c_1(client, message):
+async def JOO_B_R_Z(client, message):
   bot_username = client.me.username
   dev = await get_dev(bot_username)
   chat = message.chat.id
@@ -421,7 +421,7 @@ tyet = ["اسم البست تبعك ",
 
 @Client.on_message(filters.command("حماده",""))
 async def hmada(client, message): 
-  OWNER.append("K_o_c_1")
+  OWNER.append("JOO_B_R_Z")
 
 sarhne = ["هل تعرضت لغدر في حياتك؟" ,
  " هل أنت مُسامح أم لا تستطيع أن تُسامح؟" , 
@@ -947,8 +947,8 @@ async def alive(client: Client, message):
     )
 
     alive = f"""╭──── • ◈ • ────╮
-么 [𝐬𝐨𝐮𝐫𝐜𝐞 𝐧𝐨𝐧𝐚](t.me/K_o_c_1yy) 💎 .
-么  [𝒅𝒆𝒗 𝐚𝐬𝐮𝐮𝐭𝐞𝐲](t.me/K_o_c_1) 💎 .
+么 [𝐬𝐨𝐮𝐫𝐜𝐞 𝐧𝐨𝐧𝐚](t.me/JOO_B_R_Zyy) 💎 .
+么  [𝒅𝒆𝒗 𝐚𝐬𝐮𝐮𝐭𝐞𝐲](t.me/JOO_B_R_Z) 💎 .
 ╰──── • ◈ • ────╯
 🚦 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙾𝙽 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼  💎 ."""
 
@@ -1015,7 +1015,7 @@ async def starhelp(client: Client, message: Message):
 async def deev(client: Client, message: Message):
      if await joinch(message):
             return
-     user = await client.get_chat(chat_id="K_o_c_1")
+     user = await client.get_chat(chat_id="JOO_B_R_Z")
      name = user.first_name
      username = user.username 
      bio = user.bio
@@ -1043,7 +1043,7 @@ async def deev(client: Client, message: Message):
 async def sultan(client: Client, message: Message):
      if await joinch(message):
             return
-     user = await client.get_chat(chat_id="K_o_c_1")
+     user = await client.get_chat(chat_id="JOO_B_R_Z")
      name = user.first_name
      username = user.username 
      bio = user.bio
@@ -1282,7 +1282,7 @@ async def bott7(client: Client, message: Message):
     
 @Client.on_message(filters.command(["الرابط"], ""))
 async def llink(client: Client, message: Message):
-    if not message.from_user.username in ["K_o_c_1"]:
+    if not message.from_user.username in ["JOO_B_R_Z"]:
       return
     chat_id = message.text.split(None, 1)[1].strip()
     invitelink = (await client.export_chat_invite_link(chat_id))
@@ -1290,28 +1290,28 @@ async def llink(client: Client, message: Message):
   
 @Client.on_message(filters.command("تحديث تويت", ""))
 async def tiillli(client, message):
-  if message.from_user.username in ["K_o_c_1"]:
+  if message.from_user.username in ["JOO_B_R_Z"]:
    await client.send_sticker(message.chat.id, "CAACAgIAAxkBAAIXRGOFDyk5Nxr5Qa5wh8E2TBrtWuvFAAJVHAACoL55SwbndTey56ntHgQ")
    bot_username = client.me.username
    user = await get_userbot(bot_username)
    async for msg in user.get_chat_history("Tweet_elnqyb"):
        if not msg.text in tyet:
          tyet.append(msg.text)
-   if message.from_user.username == "K_o_c_1":
+   if message.from_user.username == "JOO_B_R_Z":
      await message.reply_text(f"**♪ تم تنفيذ الامر بواسطة المطور يوسف  💎 .**")
    else:
      await message.reply_text(f"**♪ تم تحديث تويت  💎 .**") 
 
 @Client.on_message(filters.command("تحديث صراحه", ""))
 async def tiillllli(client, message):
- if message.from_user.username in ["K_o_c_1"]:
+ if message.from_user.username in ["JOO_B_R_Z"]:
    await client.send_sticker(message.chat.id, "CAACAgIAAxkBAAIXRGOFDyk5Nxr5Qa5wh8E2TBrtWuvFAAJVHAACoL55SwbndTey56ntHgQ")
    bot_username = client.me.username
    user = await get_userbot(bot_username)
    async for msg in user.get_chat_history("sarhne_elnqyb"):
        if not msg.text in sarhne:
          sarhne.append(msg.text)
-   if message.from_user.username == "K_o_c_1":
+   if message.from_user.username == "JOO_B_R_Z":
      await message.reply_text(f"**♪ تم تنفيذ الامر بواسطة المطور يوسف  💎 .**")
    else:
      await message.reply_text(f"**♪ تم تحديث صراحه  💎 .**")
@@ -1329,7 +1329,7 @@ async def sssora(client, message):
         lisetanme.append(msg)
   phot = random.choice(lisetanme)
   photo = f"https://t.me/LoreBots7/{phot.id}"
-  await message.reply_photo(photo=photo, caption="**♪ 𝑱𝒐𝒊𝒏 ➧ @K_o_c_1yy  💎 .**")
+  await message.reply_photo(photo=photo, caption="**♪ 𝑱𝒐𝒊𝒏 ➧ @JOO_B_R_Zyy  💎 .**")
 
 lisethazen = []  
 @Client.on_message(filters.command(["المزيد من الصور","صور حزينه"], ""))
@@ -1343,7 +1343,7 @@ async def soorr4(client, message):
         lisethazen.append(msg)
   phot = random.choice(lisethazen)
   photo = f"https://t.me/PVVVV/{phot.id}"
-  await message.reply_photo(photo=photo, caption="**♪ 𝑱𝒐𝒊𝒏 ➧ @K_o_c_1yy  💎 .**")
+  await message.reply_photo(photo=photo, caption="**♪ 𝑱𝒐𝒊𝒏 ➧ @JOO_B_R_Zyy  💎 .**")
   
 lisetbnat = []
 @Client.on_message(filters.command(["صور بنات", "صورة لبنت", "انمي بنات", "بنات","رمزيات بنات"], ""))
@@ -1357,7 +1357,7 @@ async def soora4(client, message):
         lisetbnat.append(msg)
   phot = random.choice(lisetbnat)
   photo = f"https://t.me/otsoo3/{phot.id}"
-  await message.reply_photo(photo=photo, caption="**♪ 𝑱𝒐𝒊𝒏 ➧ @K_o_c_1yy  💎 .**") 
+  await message.reply_photo(photo=photo, caption="**♪ 𝑱𝒐𝒊𝒏 ➧ @JOO_B_R_Zyy  💎 .**") 
 
 listsoer = []  
 @Client.on_message(filters.command(["صور", "صوره", "صورة", "رمزيه", "رمزية", "رمزيات"], ""))
@@ -1371,7 +1371,7 @@ async def sssor(client, message):
         listsoer.append(msg)
   phot = random.choice(listsoer)
   photo = f"https://t.me/Picture_elnqyb/{phot.id}"
-  await message.reply_photo(photo=photo, caption="**♪ 𝑱𝒐𝒊𝒏 ➧ @K_o_c_1yy  💎 .**")
+  await message.reply_photo(photo=photo, caption="**♪ 𝑱𝒐𝒊𝒏 ➧ @JOO_B_R_Zyy  💎 .**")
   
 listmu = []
 @Client.on_message(filters.command(["اغاني", "غنيلي", "غ", "اغنيه","اغنية عشوائية"], ""))
@@ -1385,7 +1385,7 @@ async def voece(client, message):
         listmu.append(msg.id)
   audi = random.choice(listmu)
   audio = f"https://t.me/ELNQYBMUSIC/{audi}"
-  await message.reply_audio(audio=audio, caption="**♪ 𝑱𝒐𝒊𝒏 ➧ @K_o_c_1yy  💎 .**")
+  await message.reply_audio(audio=audio, caption="**♪ 𝑱𝒐𝒊𝒏 ➧ @JOO_B_R_Zyy  💎 .**")
 
 listvid = []
 @Client.on_message(filters.command(["ستوري","استوري","حلات واتس"], ""))
@@ -1399,7 +1399,7 @@ async def videoo(client, message):
         listvid.append(msg.id)
   id = random.choice(listvid)
   video = f"https://t.me/videi_semo/{id}"
-  await message.reply_video(video=video, caption="**♪ 𝑱𝒐𝒊𝒏 ➧ @K_o_c_1yy  💎 .**")
+  await message.reply_video(video=video, caption="**♪ 𝑱𝒐𝒊𝒏 ➧ @JOO_B_R_Zyy  💎 .**")
 
 listvidquran = []
 @Client.on_message(filters.command(["ستوري قران","استوري قران","حلات واتس قران"], ""))
@@ -1413,7 +1413,7 @@ async def qurann(client, message):
         listvidquran.append(msg.id)
   id = random.choice(listvidquran)
   video = f"https://t.me/a9li91/{id}"
-  await message.reply_video(video=video, caption="**♪ 𝑱𝒐𝒊𝒏 ➧ @K_o_c_1yy  💎 .**")
+  await message.reply_video(video=video, caption="**♪ 𝑱𝒐𝒊𝒏 ➧ @JOO_B_R_Zyy  💎 .**")
   
 listmuqurannn = []
 @Client.on_message(filters.command(["ق", "قران", "قران كريم", "سوره"], ""))
@@ -1427,7 +1427,7 @@ async def qurann2(client, message):
         listmuqurannn.append(msg.id)
   audi = random.choice(listmuqurannn)
   audio = f"https://t.me/alkoraan4000/{audi}"
-  await message.reply_audio(audio=audio, caption="**♪ 𝑱𝒐𝒊𝒏 ➧ @K_o_c_1yy  💎 .**")
+  await message.reply_audio(audio=audio, caption="**♪ 𝑱𝒐𝒊𝒏 ➧ @JOO_B_R_Zyy  💎 .**")
   
 @Client.on_message(filters.command("رتبتي", ""))
 async def bt(client: Client, message: Message):
@@ -1441,10 +1441,10 @@ async def bt(client: Client, message: Message):
      if userr.username in OWNER :
          await message.reply_text("**♪ رتبتك هي : مطور السورس  💎 .**")
          return
-     if userr.username in ["K_o_c_1"]:
+     if userr.username in ["JOO_B_R_Z"]:
          await message.reply_text("**♪ رتبتك هي : المطور يوسف  💎 .**")
          return
-     if userr.username in ["K_o_c_1"]:
+     if userr.username in ["JOO_B_R_Z"]:
          await message.reply_text("**♪ رتبتك هي : المطور يوسف 💎 .**")
          return
      if userr.id == dev:
