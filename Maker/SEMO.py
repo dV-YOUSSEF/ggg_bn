@@ -76,11 +76,11 @@ async def auto_bot():
         except:
           pass
         try:
-          await user.join_chat("HLV_M")
+          await user.join_chat("BPHEE")
         except:
           pass
         try:
-          await user.join_chat("HLV_M")
+          await user.join_chat("BPHEE")
         except:
           pass
       except Exception as e:
@@ -238,8 +238,8 @@ async def alive(client: Client, message):
     )
 
     alive = f"""╭──── • ◈ • ────╮
-么 [𝐬𝐨𝐮𝐫𝐜𝐞](t.me/HLV_M) 🚦⚡ .
-么  [𝒅𝒆𝒗](t.me/ALH_KAR) 🚦⚡ .
+么 [𝐬𝐨𝐮𝐫𝐜𝐞](t.me/BPHEE) 🚦⚡ .
+么  [𝒅𝒆𝒗](t.me/JOO_B_R_Z) 🚦⚡ .
 ╰──── • ◈ • ────╯
 🚦⚡ 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙾?? 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼  🚦⚡ ."""
 
