@@ -72,7 +72,7 @@ async def auto_bot():
         except:
            pass
         try:
-          await user.join_chat("SOURCE_ELNGOM")
+          await user.join_chat("BPHEE")
         except:
           pass
         try:
