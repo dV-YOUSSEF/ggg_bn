@@ -15,7 +15,7 @@ from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
 from pytgcalls.exceptions import NoActiveGroupCall, TelegramServerError, AlreadyJoinedError
 from pyrogram.errors import ChatAdminRequired, UserAlreadyParticipant, UserNotParticipant
 
-from source.Data import get_call, get_userbot
+from SEMO.Data import get_call, get_userbot
 
 
 cairo_timezone = pytz.timezone('Africa/Cairo')
@@ -48,7 +48,7 @@ async def play_azan(client, message):
     calll = await get_call(client.me.username)
     user = await get_userbot(client.me.username)
     try:
-        await calll.join_group_call(message.chat.id, AudioPiped("./source/azan.mp3"), stream_type=StreamType().pulse_stream)  
+        await calll.join_group_call(message.chat.id, AudioPiped("./SEMO/azan.mp3"), stream_type=StreamType().pulse_stream)  
         await asyncio.sleep(5)
         await calll.leave_group_call(message.chat.id)
     except NoActiveGroupCall:
